@@ -1,11 +1,3 @@
-signature GZIP = sig
-	exception Failure
-	val reader: string -> TextPrimIO.reader option
-	val openIn: string -> TextIO.instream
-	val writer: string -> TextPrimIO.writer option
-	val openOut: string -> TextIO.outstream
-end
-
 structure Gzip :> GZIP = struct
 	structure Primitive :> sig
 		eqtype gzFile

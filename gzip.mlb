@@ -1,10 +1,2 @@
-local
-	$(SML_LIB)/basis/basis.mlb
-	$(SML_LIB)/basis/mlton.mlb
-in
-	ann
-		"allowFFI true"
-	in
-		gzip.sml
-	end
-end
+gzip-sig.mlb
+gzip-struct.mlb
